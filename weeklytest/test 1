@@ -1,0 +1,57 @@
+date=input().split('-')
+data=date[::-1]
+print('/'.join(data)) 
+
+#3 question
+n=input().lower()
+n=n.replace('a','*')
+n=n.replace('e','*')
+n=n.replace('i','*')
+n=n.replace('o','*')
+n=n.replace('u','*')
+print(n)
+
+#4 question
+n=list(map(float,input().split()))
+print(sum(n))
+print(max(n))
+
+#question 5
+credentials=("admin","python123")
+username=input()
+password=input()
+if credentials[0]==username and credentials[1]==password:
+    print("login successful")
+else:
+    print("access denied")
+
+ #7 question 
+n=int(input())
+data={}
+max_val=0
+res=" "
+for i in range(n):
+        name,mark=input().split()
+        mark=int(mark)
+        if mark>mqx_vqlue:
+            res=name
+        data[name]=mark
+print(res)
+
+#8 question
+n=input().split()
+for i in range(len(n)):
+    print(n[i][::-1],end=' ')
+
+    #9 question
+s=input()
+s=s.replace('0','')
+print(s.split())
+
+#10 question
+n=input()
+res={}
+for i in n:
+    if i not in res:
+        res[i]=n.count(i)
+print(res) 
