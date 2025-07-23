@@ -1,3 +1,4 @@
+#1 question
 date=input().split('-')
 data=date[::-1]
 print('/'.join(data)) 
@@ -12,7 +13,7 @@ n=n.replace('u','*')
 print(n)
 
 #4 question
-n=list(map(float,input().split()))
+n=list(map(float.input().split()))
 print(sum(n))
 print(max(n))
 
