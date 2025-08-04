@@ -31,4 +31,24 @@ if op=="/":
 if op=="%":
     print(mod(a,b))
 if op=="**":
-    print(exp(a,b))                
+    print(exp(a,b))              
+#addition
+def add(a,b):
+    return a+b
+print(add(10,33))
+#subtraction
+def sub(a,b):
+    return a-b
+print(sub(10,33))
+#max
+def maximum(a,b):
+    return max(a,b)
+print(maximum(10,33))
+#minimum
+def minimum(a,b,c,d):
+    return min(a,b,c,d)
+print(minimum(10,33,44,1))
+#sorted
+def sort(l):
+    return sorted(l)
+print(sort([2,3,4,5,0]))

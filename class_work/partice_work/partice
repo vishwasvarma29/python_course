@@ -1,0 +1,113 @@
+'''a=10+5*(2**3)-6/2
+print(a)
+#for loop
+for i in range(1,6):
+    print(i)'''
+
+#1. Check if three lengths form an Equilateral, Isosceles, or Scalene
+'''a,b,c=tuple(map(int,input("Enter the number").split()))
+if a==b and b==c and c==a:
+    print("equilateral")
+elif a!=b and b!=c and c!=a:
+    print("isosceles")
+else:
+    print("scalene")
+#2. Classify a character as: vowel, consonant, digit, special character
+a=input()
+vowel='aieouAEIOU'
+if a.isalpha():
+   if a in vowel:
+      print("vowel")
+   else:
+      print("consonant")
+elif a.isdigit():
+    print("Digit")
+else:
+    print("special character")
+#3. BMI Calculator and Category
+h=float(input("Enter your weight"))
+w=float(input("Enter your height"))
+bmi = w / (h**2)
+if bmi < 18.5:
+   print("underweight")
+elif 18.5 <= bmi < 24.9:
+   print("Normnal")
+elif 25<= bmi < 29.9:
+   print("overweight")
+ #4. Electricity bill calculator based on units used
+units=int(input())
+bills=0
+if units>0:
+   if units<=100:
+      bill=units*1
+   elif units>=101 and units<=200:
+      bill=100+(units-100)*2
+   elif units>200:
+      bill=300+(units-200)*3
+print(bill)
+#5. Check if a number is Armstrong (3-digit)
+n=input()
+arm =0
+for i in n:
+   arm+=int(i)**3
+if int(n)==arm:
+   print("armstrong")
+else:
+   print("Not armstrong")
+#6. Validate strong password (min 8 chars, 1 uppercase, 1 digit, 1 special char
+pwd=input()
+if len(pwd)>=8:
+    s=set()
+    for i in pwd:
+       if i.isupper():
+          s.add("u")
+       elif i.islower():
+          s.add("l")
+       elif i.isdigit():
+          s.add("d")
+       else:
+          s.add("s")
+    if len(s)==4:
+        print("strong password")
+    else:
+       print("weak password")
+#7. ATM Withdrawal Simulation
+balance=int(input())
+withdraw=int(input())
+if withdraw<=balance :
+   print("success")
+else:
+   print ("insufficient balance")
+#8. Ticket fare calculator with age-based discount
+total=float(input("Enter the total fare amount"))
+Age=int(input("Enter the age"))
+Base_fare=100
+if Age <5:
+   print("free")
+elif Age<18:
+   print(Base_fare*50/100)
+elif Age>60:
+   print(Base_fare*30/100)
+else:
+   print("Base_fare")'''
+#9. 24-hour to 12-hour time converter
+hrs,min=tuple(map(int,input().split(":")))
+if 0<=hrs<=23 and 0<=min<=60:
+   if 0<=hrs<=12:
+      print(f'{hrs}:{min} AM')
+   elif 0<=hrs<=24:
+      print(f'{hrs-12}:{min} pm')
+else:
+   print("invaild time")      
+#11. Grading system with nested bands (including + and - grades)
+marks=int(input())
+if 90<=marks<=100:
+   print("A")
+elif 85<=marks<=89:
+   print("B+")
+elif 80<=marks<=84:
+   print("B")
+elif 70<=marks<=79:
+   print("c")
+else:
+   print("F")

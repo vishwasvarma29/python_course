@@ -1,4 +1,4 @@
-#1 question
+#1 question:salary tax calculation
 salary=float(input())
 if salary <= 25000 :
     print("No tax")
@@ -9,7 +9,7 @@ elif salary >500000 and salary <=1000000:
 elif salary >1000000:
    print(salary*0.3) 
 
-#2 question
+#2 question:movie ticket pricing based on age
 n=int(input())
 total=0
 for _ in range(n):
@@ -21,7 +21,7 @@ for _ in range(n):
     elif age>60:
         total+=120
 print(total)
-#3 question
+#3 question:electricity bill Generator
 units=int(input())
 bill=0
 if units <=100:
@@ -33,7 +33,7 @@ elif units>200 and units<=500:
 else:  
     bill+=1600+(units-500)*6
 print(bill) 
-#4 question
+#4 question:car parking fee calculation
 hrs=int(input())
 fee=0
 if hrs<=2:
@@ -43,7 +43,7 @@ elif hrs>2 and hrs<24:
     fee=30+(hrs-2)*10
 elif hrs>=24:
     print(200)
-#5 question
+#5 question:product inventory checker
 name=input()
 qua=int(input())
 if qua==0:
@@ -55,7 +55,7 @@ elif qua>10 and qua<51:
 elif qua>50:
     print("over stock")
 
-#6 question
+#6 question:pattern rows and columns
 n=int(input())
 for row in range(n):
     for col in range(n):
@@ -64,7 +64,7 @@ for row in range(n):
         else:
             print(1,end=" ")
     print()
-#7 question
+#7 question:Gym subscription Billing
 ch=int(input())
 ppl=int(input())
 if ch==1:
@@ -73,7 +73,7 @@ elif ch==2:
     print(ppl*1300)
 elif ch==3:
     print(ppl*5000)
-#8 question
+#8 question:Billing bot-Aplly Discount Based on Amount
 total=float(input())
 if total<1000:
     print(total)
@@ -83,7 +83,7 @@ elif total>4999 and total<10000:
     print(total-total*0.1)
 elif total>10000:
     print(total-total*0.15)
-#9 question
+#9 question:ATM PIN verification with Blocking Logic
 pin=1234
 for _ in range(3):
     epin=int(input())
@@ -92,7 +92,7 @@ for _ in range(3):
         break
 else:
     print("ATM Blocked. Try Again Later")
-#10 question 
+#10 question Bus Seat Booking System
 total_seats=int(input())
 booked_seats=list(map(int,input().split()))
 print(f'Total seats:{total_seats}')
