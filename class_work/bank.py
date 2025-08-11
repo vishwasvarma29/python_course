@@ -39,7 +39,7 @@ if acc in data and data[acc]["pin"]==pin:
         for i in data[acc]["history"]:
             print(f"-{i}")
     elif op==5:
-         break
+          break
     else:
         print("Invalid option")
 else:
