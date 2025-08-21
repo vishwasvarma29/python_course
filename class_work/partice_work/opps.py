@@ -7,10 +7,6 @@ class book:
         print("Book Details".center(50,'*'))
         print("Book title: {self.title}\nBook Author:{self.author}\nBook price: (self.price)")
         
-
-
-
-
 #class Employee
 class Employee:
     def __init__(self,name,base_salary):
